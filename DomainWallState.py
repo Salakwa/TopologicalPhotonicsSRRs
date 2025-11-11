@@ -33,6 +33,8 @@ def plot_dw_amp(df_array, plot_title):
     plt.legend(fontsize=8, ncol=2)
     plt.show()
 
+
+
 # === Function: Plot comparison for multiple datasets ===
 def plot_dw_comparison_colored(df_arr, labels_arr, color_arr, title):
     # Safety check
@@ -60,11 +62,6 @@ def plot_dw_comparison_colored(df_arr, labels_arr, color_arr, title):
     plt.grid(True)
     plt.legend(fontsize=8)
     plt.show()
-
-
-
-
-
 
 
 #Plot the Two Graphs we need for comparison
