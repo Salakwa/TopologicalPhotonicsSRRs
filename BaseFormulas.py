@@ -15,3 +15,11 @@ def eigenfrequencies_w(k: float, a: int, J1: int, J2: int, type: bool):
 # The formula to calculate our Bandgap (The bandgap cloases at when J2/J1 = 1)
 def bandgap_delta(j2: int, j1: int):
     return 2 * abs(j2 - j1)
+
+
+# Function to compute IPR (Inverse Participation Ratio)
+def compute_ipr(amplitudes):
+    """ amplitudes: np.array, normalized mode amplitudes |ψ|² """
+    return np.sum(amplitudes**2) / (np.sum(amplitudes)**2)
+
+
